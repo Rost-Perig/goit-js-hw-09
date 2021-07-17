@@ -1,4 +1,3 @@
-//shdbf
 export function onOpenLightbox({lightbox, lightboxImage}) {
   const activeGalleryImgEl = document.activeElement.firstElementChild;
 

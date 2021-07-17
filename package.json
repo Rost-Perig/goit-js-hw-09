@@ -10,7 +10,8 @@
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build",
     "commit": "git commit -m",
-    "precommit": "git add ."
+    "precommit": "git add .",
+    "postcommit": "git push"
   },
   "repository": {
     "type": "git",
