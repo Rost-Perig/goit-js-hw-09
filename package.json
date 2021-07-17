@@ -9,7 +9,8 @@
     "build": "parcel build src/*.html --public-url /goit-js-hw-09/",
     "deploy": "gh-pages -d dist",
     "predeploy": "npm run build",
-    "commit": "git commit -m"
+    "commit": "git commit -m",
+    "precommit": "git add ."
   },
   "repository": {
     "type": "git",
