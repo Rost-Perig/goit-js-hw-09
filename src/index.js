@@ -47,17 +47,33 @@ function onKeyPress(evt) {
   let modalIsOpen = refs.lightbox.classList.contains('is-open');
   
   if (modalIsOpen) {
-   if (evt.code === "Escape") {
-    onCloseLightbox(refs);
-  };
+  //  if (evt.code === "Escape") {
+  //   onCloseLightbox(refs);
+  // };
   
-  if (evt.code === "ArrowRight") {
-    lightboxImageRight(refs, galleryItems);
-  };
+  // if (evt.code === "ArrowRight") {
+  //   lightboxImageRight(refs, galleryItems);
+  // };
 
-  if (evt.code === "ArrowLeft") {
-    lightboxImageLeft(refs, galleryItems);
-  }; 
+  // if (evt.code === "ArrowLeft") {
+  //   lightboxImageLeft(refs, galleryItems);
+  // }; 
+    switch (evt.code) {
+      case "Escape": 
+       onCloseLightbox(refs);
+       break;
+
+      case "ArrowRight":
+       lightboxImageRight(refs, galleryItems);
+       break;
+
+      case "ArrowLeft":
+       lightboxImageLeft(refs, galleryItems);
+       break;
+
+      default:
+       break;
+    }
   };
 };
 
