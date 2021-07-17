@@ -23,7 +23,7 @@ const createGallery = (items) => {
 };
 
 /* вариант под innerHTML*/
-// export const createGallery = (items) => {
+// const createGallery = (items) => {
 //   return items
 //     .map(({ preview, original, description }) => {
 //         return  `
@@ -56,7 +56,7 @@ const createGalleryTitle = ({ galleryTitle, titleColor }) => {
 const finalGalleryCreator = (refs, items) => {
   refs.gallerySection.prepend(createGalleryTitle(refs));
   refs.gallery.append(...createGallery(items));
-  // list.innerHTML = createGallery(galleryItems);
+  // refs.gallery.innerHTML = createGallery(items);
 };
 
 export default finalGalleryCreator;
