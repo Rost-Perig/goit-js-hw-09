@@ -1,4 +1,5 @@
 // first test
+// sdfdf sdfd
 export function onOpenLightbox({lightbox, lightboxImage}) {
   const activeGalleryImgEl = document.activeElement.firstElementChild;
 
